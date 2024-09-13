@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COGELA SUAVE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #dddddd;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Necesario para posicionar la línea vertical */
+        }
+
+        .img img {
+            margin-right: 50px;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            object-fit: contain;
+            background-color: #ffffff;
+        }
+
+        .name {
+            text-align: right;
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: -300px;
+            text-align: center;
+            color: #008060;
+        }
+
+        .subtitle {
+            font-family: "Segoe UI";
+            margin-left: 10px;
+            text-align: center;
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: -10px;
+            color: #000000;
+        }
+
+        .titulo { 
+            font-family: "Helvetica Neue";
+            margin-left: 10px;
+            text-align: right;
+            font-size: 30px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .info {
+            font-family: "Helvetica Neue";
+            margin-left: 40px;
+            text-align: right;
+            font-size: 21px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+
+        .img1 {
+            margin-top: -25px;
+            margin-left: 20px;
+            margin-right: 270px;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ffffff;
+            display: block;
+            float: right; 
+            margin-bottom: 10px;
+        }
+
+        .lineas {
+            margin-top: -215px;
+            width: 500%;
+            height: 190px;
+            background-color: #008060;
+            padding: 30px;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        .titulo2 { 
+            font-family: "Helvetica Neue";
+            margin-right: 10px;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .info2 {
+            font-family: "Helvetica Neue";
+            margin-right: 40px;
+            text-align: left;
+            font-size: 21px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="cv-container">
+        <aside class="left-section">
+            <div class="img">
+                <img src="img/lcs.PNG" alt="Logo">
+            </div>
+            
+            <h1 class="name">COGELA SUAVE <br> </h1>
+            <p class="subtitle">Stefanny Dayana Guillen Puin <br>
+                Juan Jose Bautista Fonseca<br>
+                Loren Stefany Tavera Quiroz<br>
+            </p>
+
+            <section class="cs"></section>
+                <h2 class="titulo">¿Quienes somos?</h2>
+                <p class="info">
+                    Somos un grupo de estudiantes comprometidos con la salud mental de nuestros compañeros  <br>
+                    universitarios. Queremos incentivar y promover la atención y cuidado de su bienestar para <br>
+                    asegurarnos de que tengan acceso a los recursos necesarios para enfrentar los desafíos <br>
+                    académicos y personales. Juntos, podemos construir una comunidad universitaria más saludable y feliz.<br>
+            </section>
+
+            <div class="img1">
+                <img src="img/CG1.jpeg" alt="Logo">
+            </div>
+
+            <section class="cs"></section>
+            <h2 class="titulo">Objetivo del proyecto</h2>
+            <p class="info">
+                Desarrollar una aplicación, para monitorear el estado de la salud emocional de los estudiantes de la Universidad San Buenaventura de Bogotá, con el fin de brindar capsulas de 
+                autoayuda.
+        </section>
+
+        <section class="cs"></section>
+        <h2 class="titulo2">Alcance</h2>
+        <p class="info2">
+            "Cógela Suave" es un proyecto innovador que busca ofrecer unas capsulas dependiendo <br>
+            del patrón detectado y de las preferencias de los estudiantes de la Universidad San <br>
+            Buenaventura de Bogotá; a través de este proyecto, se busca monitorear las emociones y <br>
+            sentimientos de los estudiantes que describan ellos mismos. <br> 
+            A largo plazo, se espera que el proyecto pueda ponerse a prueba con un grupo de <br>
+            estudiantes que acceda voluntariamente a "Cógela Suave" y se les ofrecerá una versión beta del <br> 
+            aplicativo. Es importante destacar que este proyecto no busca reemplazar el tratamiento <br>
+            psicológico, sino ser un apoyo que brinda herramientas para manejar mejor las emociones. <br>
+            
+    </section> 
+
+                       <!-- Botones con Bootstrap -->
+                       <div class="button-container">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal">
+                            Documentación
+                        </button>
+                        <a href="https://youtu.be/MhAkuYiol7k" class="btn btn-secondary" target="_blank">
+                            Base de datos
+                        </a>
+                        <a href="https://youtu.be/daWmVPkXR18" class="btn btn-secondary" target="_blank">
+                            Speech
+                        </a>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModalExtra">
+                            Scrum
+                        </button>
+                    </div>
+                </aside>
+            </main>
+        
+            <!-- Modal para mostrar el PDF -->
+            <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Documentación</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="Documentacion/Cógela Suave.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal para la información adicional -->
+            <div class="modal fade" id="infoModalExtra" tabindex="-1" role="dialog" aria-labelledby="infoModalExtraLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalExtraLabel">Registro Diario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            La actividad de comienzo de semestre fue replantear los objetivos necesarios para
+                            el proyecto y las metas que se requieren al final del mismo, así mismo los requerimientos 
+                            funcionales para su correcta función y que todo salga bien sin que hallan mayores contratiempos.
+                            Al dia de hoy 16/04/2024 no se hacen renovaciones a diario sin embargo cada miércoles
+                            de cada semana se hace el seguimiento necesario empezando por la documentación en 
+                            requerimientos funcionales, los días en que el equipo debe reunirse para llevar acabo 
+                            el seguimiento necesario, lo que se a logrado es la funcionalidad de la pagina de 
+                            registro de comienzo así mismo que ella guarde datos, también se logro el re diseño del aplicativo.
+                            Lo que mas se nos ha dificultado es la documentación ya que no se suele ser muy organizado y es lo
+                            ultimo que dejamos por esa razón nos es mas complicado todo lo que esto conlleva tal como la matriz 
+                            de riesgo, el sistema de gestión de calidad etc.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script para la alerta -->
+    <script>
+        function showAlert() {
+            alert("¡Este es un mensaje de alerta!");
+        }
+    </script>
+</body>
+</html>
